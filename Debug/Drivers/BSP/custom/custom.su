@@ -1,0 +1,15 @@
+../Drivers/BSP/custom/custom.c:85:9:BSP_GetVersion	8	static
+../Drivers/BSP/custom/custom.c:97:9:BSP_LED_Init	16	static
+../Drivers/BSP/custom/custom.c:112:9:BSP_LED_DeInit	40	static
+../Drivers/BSP/custom/custom.c:135:9:BSP_LED_On	16	static
+../Drivers/BSP/custom/custom.c:152:9:BSP_LED_Off	16	static
+../Drivers/BSP/custom/custom.c:169:9:BSP_LED_Toggle	16	static
+../Drivers/BSP/custom/custom.c:186:9:BSP_LED_GetState	16	static
+../Drivers/BSP/custom/custom.c:194:13:LED_USER_GPIO_Init	48	static
+../Drivers/BSP/custom/custom.c:225:9:BSP_COM_Init	24	static
+../Drivers/BSP/custom/custom.c:263:9:BSP_COM_DeInit	24	static
+../Drivers/BSP/custom/custom.c:300:26:MX_USART2_UART_Init	32	static
+../Drivers/BSP/custom/custom.c:420:9:BSP_COM_SelectLogPort	16	static
+../Drivers/BSP/custom/custom.c:466:5:__io_putchar	16	static
+../Drivers/BSP/custom/custom.c:479:13:USART2_MspInit	104	static
+../Drivers/BSP/custom/custom.c:520:13:USART2_MspDeInit	16	static
