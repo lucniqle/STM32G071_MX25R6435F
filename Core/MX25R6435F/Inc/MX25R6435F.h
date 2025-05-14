@@ -10,16 +10,21 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "main.h"
+#include "spi.h"
 #include "MX25R6435F_desc.h"
 
-typedef enum{
-  MX_OK       = 0x00U,
-  MX_ERROR    = 0x01U,
-  MX_BUSY     = 0x02U,
+typedef enum
+{
+  MX_OK = 0x00U,
+  MX_ERROR = 0x01U,
+  MX_BUSY = 0x02U,
 } MX_Err;
 
+void Set_Reset_Pin(GPIO_PinState State);
+
 void Set_CS_Pin(GPIO_PinState State);
+
+void Set_WP_Pin(GPIO_PinState State);
 
 void Delay_ms(uint32_t delay);
 
@@ -51,6 +56,8 @@ MX_Err MX_Erase_Block32(uint32_t address);
 
 MX_Err MX_Erase_Block64(uint32_t address);
 
+MX_Err MX_Erase_Chip(void);
+
 MX_Err MX_Read_Bytes(uint8_t *data, uint32_t address, uint32_t size);
 
 MX_Err MX_Write_Page(uint8_t *pData, uint32_t address, uint32_t size);
@@ -60,6 +67,5 @@ MX_Err MX_Write_Bytes(uint8_t *pData, uint32_t address, uint32_t size);
 MX_Err MX_Enter_Deep_Power_Down(void);
 
 void MX_Exit_Deep_Power_Down(void);
-
 
 #endif /* INC_MX25R6435F_H_ */
